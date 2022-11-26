@@ -20,20 +20,20 @@ body {
 }
 
 .header {
-    background-color: skyblue;
+
     display: flex;
 }
 
 .logo-wrap {
-    width: 30%;
+    width: 20%;
 }
 
 .logo__picture {
-    width: 50%;
+    width: 100%;
 }
 
 .menu {
-    display: flex;
+    display: inline-block;
     width: 100%;
     font-size: 0;
     background-color: #392c2cdd;
@@ -52,6 +52,7 @@ body {
     position: absolute;
 }
 .menu__link {
+    width: 100%;
     color: azure;
     text-decoration: none;
     font-size: 2rem;
@@ -84,7 +85,7 @@ body {
 
 .submenu__link:hover {
     text-decoration: underline;
-    background: black;
+    background: #392c2cdd;
 }
 
 .subsubmenu {
@@ -113,7 +114,7 @@ body {
 
 .subsubmenu__link:hover {
     text-decoration: underline;
-    background: black;
+    background: #392c2cdd;
 }
 
 .section {
@@ -133,7 +134,7 @@ p[class$="item"] {
 
 p::first-letter {
     font-size: 2rem;
-    color: violet;
+    color: rgb(235, 79, 235);
     font-weight: bold;
 }
 
