@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: burlywood;
+    font-size: 1rem;
+}
+
+.header {
+    background-color: skyblue;
+    display: flex;
+}
+
+.logo-wrap {
+    width: 30%;
+}
+
+.logo__picture {
+    width: 50%;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    font-size: 0;
+    background-color: #392c2cdd;
+}
+
+.menu__item {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 2%;
+    margin: 2% 5%;
+    position: relative;
+}
+
+.menu__item:hover .submenu {
+    display: block;
+    position: absolute;
+}
+.menu__link {
+    color: azure;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 1%;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+.submenu {
+    width: 80%;
+    display: none;
+}
+
+.submenu__item {
+    position: relative;
+}
+
+.submenu__link {
+    color: azure;
+    font-size: 1rem;
+    display: block;
+    padding: 5%;
+    background: skyblue;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.submenu__link:hover {
+    text-decoration: underline;
+    background: black;
+}
+
+.subsubmenu {
+    width: 90%;
+    display: none;
+    left: 100%;
+    top: 0;
+    background: skyblue;
+    font-size: 1rem;
+}
+
+
+.submenu__item:hover .subsubmenu {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+}
+
+.subsubmenu__link {
+    color: azure;
+    display: block;
+    padding: 7% 3%;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.subsubmenu__link:hover {
+    text-decoration: underline;
+    background: black;
+}
+
+.section {
+    margin-top: 8%;
+}
+
+.section__title {
+    text-align: center;
+    padding: 2% 2%;
+
+}
+
+p[class$="item"] {
+    padding: 1% 2%;
+    text-indent: 10%;
+}
+
+p::first-letter {
+    font-size: 2rem;
+    color: violet;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    left: 40%;
+    bottom: 0;
+    text-align: center;/* Ставлю по центру*/
+    color: #888888;/* Задаю цвет  */
+    text-transform: capitalize; /* Делаем , что каждое слово начинается с большой буквы */
+}
