@@ -5,6 +5,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
 }
 
 ol, ul {
@@ -21,14 +22,16 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/*Указываю шрифт  */
     background-color: burlywood;/*Задаю фон для боди  */
     font-size: 1rem;/*Задаю размер  */
+    line-height: 1;
 }
 
 .header {
     display: flex;/*выравниваем элемепнты так как мне нужно в данном блоке  */
 }
 
-.logo-wrap {
-    width: 20%;/*Указываю ширину меню */
+.logo__picture-wrap {
+    width: 20%;/*Указываю ширину контейнера для картинки */
+    font-size: 0;
 }
 
 
@@ -37,15 +40,13 @@ body {
 }
 
 .menu {
-    display: inline-block;/*указываю что элементы блочно строчные */
-    width: 100%;/*Позиционирую относительно левой крайней точки родителя */
+    width: 80%;
     font-size: 0;/*Убираю отступ в меню*/
-    background-color: #392c2cdd;/*Задаю фон менюшке */
+    background-color: #392c2c;/*Задаю фон менюшке */
 }
 
 .menu__item {
     display: inline-block;/*указываю что элементы блочно строчные */
-    font-size: 1rem;/*ЗАдаю размер букв */
     padding: 2%;/*Внутренний отступ */
     margin: 2% 5%;/*Наружный отступ*/
     position: relative;/*Указываю родителя */
@@ -56,9 +57,7 @@ body {
     position: absolute;/*Позиционирую относительно левой крайней точки родителя */
 }
 .menu__link {
-    width: 100%;/*Указываю ширину меню */
     font-size: 2rem;/*ЗАдаю размер букв */
-    margin-bottom: 1%;/*Задаю наружный отступ от меню линка */
 }
 
 .menu__link:hover,
@@ -95,7 +94,7 @@ body {
 }
 
 .submenu__link:hover {
-    background: #392c2cdd;/*Задаю фон при наведении на линки*/
+    background: #392c2c;/*Задаю фон при наведении на линки*/
 }
 
 .subsubmenu {
@@ -119,7 +118,7 @@ body {
 
 .subsubmenu__link:hover {
     text-decoration: underline;/*При наведении на ссылку добавляет подчеркивание элементу*/
-    background: #392c2cdd;/*Задаю фоновый цвет */
+    background: #2e2222dd;/*Задаю фоновый цвет */
 }
 
 /*SECTION*/
